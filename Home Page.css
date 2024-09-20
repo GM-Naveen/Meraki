@@ -1,0 +1,136 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.login-btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fdf0f3;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 100%), url('your-background-pattern.png');
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #5A2D82;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.find-work {
+    background-color: white;
+    color: #5A2D82;
+    border: 2px solid #5A2D82;
+}
+
+.get-work {
+    background-color: #5A2D82;
+    color: white;
+}
+
+.hero-image img {
+    width: 500px;
+    max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
